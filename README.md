@@ -1,30 +1,130 @@
-# Exam project layout
+# Exam Component System
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modular system for creating and displaying exam papers using YAML files.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/artba/v0-exam-project-layout)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/kykfag42XS2)
+## Features
 
-## Overview
+- Modular component system for different types of exam tasks
+- YAML-based exam definition for easy creation and editing
+- Support for various task types:
+  - Matching tasks
+  - True/False/Not Stated tasks
+  - Multiple Choice tasks
+  - Text Completion tasks
+- Responsive design for viewing on different devices
+- Print-friendly layout
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Getting Started
 
-## Deployment
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Your project is live at:
+## Creating a New Exam
 
-**[https://vercel.com/artba/v0-exam-project-layout](https://vercel.com/artba/v0-exam-project-layout)**
+To create a new exam, add a YAML file to the `public/exams` directory. The file should follow this structure:
 
-## Build your app
+\`\`\`yaml
+id: your-exam-id
+title: Your Exam Title
 
-Continue building your app on:
+sections:
+  - id: section-id
+    type: section-type  # listening or reading
+    title: Section Title
+    tasks:
+      - id: task-id
+        type: task-type  # matching, trueFalseNotStated, multipleChoice, or textCompletion
+        taskNumber: 1
+        instructions: Task instructions go here
+        # Additional fields depending on task type
+\`\`\`
 
-**[https://v0.dev/chat/projects/kykfag42XS2](https://v0.dev/chat/projects/kykfag42XS2)**
+### Task Types and Their Fields
 
-## How It Works
+#### Matching Task
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+\`\`\`yaml
+- id: matching-1
+  type: matching
+  taskNumber: 1
+  instructions: Instructions text
+  statements:
+    - Statement 1
+    - Statement 2
+    # ...
+  options:
+    - A
+    - B
+    # ...
+\`\`\`
+
+#### True/False/Not Stated Task
+
+\`\`\`yaml
+- id: true-false-1
+  type: trueFalseNotStated
+  taskNumber: 2
+  instructions: Instructions text
+  statements:
+    - letter: A
+      text: Statement A
+    - letter: B
+      text: Statement B
+    # ...
+  options:
+    - A
+    - B
+    # ...
+\`\`\`
+
+#### Multiple Choice Task
+
+\`\`\`yaml
+- id: multiple-choice-1
+  type: multipleChoice
+  taskNumber: 3
+  instructions: Instructions text
+  questions:
+    - id: question-1
+      taskNumber: 3
+      questionText: Question text
+      options:
+        - Option 1
+        - Option 2
+        - Option 3
+    # More questions...
+\`\`\`
+
+#### Text Completion Task
+
+\`\`\`yaml
+- id: text-completion-1
+  type: textCompletion
+  taskNumber: 4
+  instructions: Instructions text
+  text: |
+    Text with **gaps** marked in **bold**.
+  options:
+    - Option 1
+    - Option 2
+    # ...
+  gapLabels:
+    - A
+    - B
+    # ...
+\`\`\`
+
+## Accessing Your Exam
+
+Once you've created your YAML file, your exam will be available at:
+
+\`\`\`
+http://localhost:3000/exams/your-exam-id
+\`\`\`
+
+Where `your-exam-id` is the `id` field from your YAML file.
+\`\`\`
+
+Let's update the package.json to include the necessary dependencies:

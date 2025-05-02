@@ -60,7 +60,8 @@
     "zod": "^3.24.1",
     "react-markdown": "latest",
     "html2canvas": "latest",
-    "jspdf": "latest"
+    "jspdf": "latest",
+    "js-yaml": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",

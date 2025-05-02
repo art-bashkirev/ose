@@ -1,0 +1,76 @@
+id: math-exam-2025
+title: Демонстрационный вариант ЕГЭ 2025 г. МАТЕМАТИКА, 11 класс.
+
+sections:
+  - id: algebra
+    type: listening
+    title: Раздел 1. Алгебра
+    tasks:
+      - id: matching-1
+        type: matching
+        taskNumber: 1
+        instructions: >
+          Установите соответствие между уравнениями и их решениями.
+        statements:
+          - x² + 4x + 4 = 0
+          - x² - 9 = 0
+          - x² - 6x + 9 = 0
+          - x² - 2x - 3 = 0
+          - x² + 2x - 3 = 0
+        options:
+          - A
+          - B
+          - C
+          - D
+          - E
+
+      - id: multiple-choice-1
+        type: multipleChoice
+        taskNumber: 2
+        instructions: >
+          Решите следующие задачи и выберите правильный ответ.
+        questions:
+          - id: mc-q-1
+            taskNumber: 2
+            questionText: Найдите значение выражения log₂(8) + log₄(8)
+            options:
+              - 4
+              - 5
+              - 6
+          - id: mc-q-2
+            taskNumber: 3
+            questionText: Решите неравенство 2x - 3 > 5
+            options:
+              - x > 4
+              - x > 3
+              - x > 2
+
+  - id: geometry
+    type: reading
+    title: Раздел 2. Геометрия
+    tasks:
+      - id: text-completion-1
+        type: textCompletion
+        taskNumber: 4
+        instructions: >
+          Прочитайте текст задачи и заполните пропуски A–C формулами, обозначенными цифрами 1–4. 
+          Одна из формул в списке 1–4 лишняя.
+        text: |
+          ## Площадь треугольника
+
+          Для вычисления площади треугольника можно использовать разные формулы:
+
+          1. Если известны основание и высота, то площадь треугольника равна **A** ______________.
+
+          2. Если известны все три стороны треугольника a, b и c, то площадь можно найти по формуле Герона: **B** ______________.
+
+          3. Если известны две стороны и угол между ними, то площадь треугольника равна **C** ______________.
+        options:
+          - S = ½ab·sin(C)
+          - S = ½·a·h
+          - S = √(p(p-a)(p-b)(p-c)), где p = (a+b+c)/2
+          - S = a²·sin(B)·sin(C)/(2·sin(A))
+        gapLabels:
+          - A
+          - B
+          - C

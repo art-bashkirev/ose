@@ -28,7 +28,7 @@ export function ListeningSection({ matchingTask, trueFalseNotStatedTask, multipl
       <TaskGroup instructions={multipleChoiceTasks.instructions}>
         {multipleChoiceTasks.questions.map((question) => (
           <MultipleChoiceTask
-            key={question.taskNumber}
+            key={question.taskNumber} // This is for React's internal use, not a prop
             taskNumber={question.taskNumber}
             questionText={question.questionText}
             options={question.options}
