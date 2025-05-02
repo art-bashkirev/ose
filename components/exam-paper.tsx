@@ -1,36 +1,9 @@
-import { Task1 } from "./task1"
-import { Task2 } from "./task2"
-import { MultipleChoiceSection } from "./multiple-choice-section"
+import { ListeningSection } from "./section/listening-section"
+import type { ExamData } from "@/types/exam"
 
-interface ExamPaperProps {
-  title: string
-  subtitle: string
-  pageNumber: string
-  task1: {
-    instructions: string
-    statements: string[]
-    options: string[]
-  }
-  task2: {
-    instructions: string
-    statements: Array<{
-      letter: string
-      text: string
-    }>
-    options: string[]
-  }
-  multipleChoiceSection?: {
-    instructions: string
-    questionRange: string
-    questions: Array<{
-      questionNumber: number
-      questionText: string
-      options: string[]
-    }>
-  }
-}
+interface ExamPaperProps extends ExamData {}
 
-export function ExamPaper({ title, subtitle, pageNumber, task1, task2, multipleChoiceSection }: ExamPaperProps) {
+export function ExamPaper({ title, pageNumber, listeningSection }: ExamPaperProps) {
   return (
     <div className="max-w-[21cm] mx-auto p-6 bg-white print:p-0 relative">
       <div className="flex justify-between mb-4 text-xs">
@@ -38,22 +11,11 @@ export function ExamPaper({ title, subtitle, pageNumber, task1, task2, multipleC
         <div>{pageNumber}</div>
       </div>
 
-      <h2 className="text-center font-bold mb-6 text-sm">{subtitle}</h2>
-
-      <div className="pl-10">
-        <Task1 taskNumber={1} instructions={task1.instructions} statements={task1.statements} options={task1.options} />
-        <Task2 taskNumber={2} instructions={task2.instructions} statements={task2.statements} options={task2.options} />
-      </div>
-
-      {multipleChoiceSection && (
-        <div className="pl-10 mt-8">
-          <MultipleChoiceSection
-            instructions={multipleChoiceSection.instructions}
-            questionRange={multipleChoiceSection.questionRange}
-            questions={multipleChoiceSection.questions}
-          />
-        </div>
-      )}
+      <ListeningSection
+        matchingTask={listeningSection.matchingTask}
+        trueFalseNotStatedTask={listeningSection.trueFalseNotStatedTask}
+        multipleChoiceTasks={listeningSection.multipleChoiceTasks}
+      />
     </div>
   )
 }
