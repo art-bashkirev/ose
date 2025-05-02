@@ -25,7 +25,7 @@ A modular system for creating and displaying exam papers using YAML files.
 
 To create a new exam, add a YAML file to the `public/exams` directory. The file should follow this structure:
 
-```yaml
+\`\`\`yaml
 id: your-exam-id
 title: Your Exam Title
 
@@ -39,13 +39,13 @@ sections:
         taskNumber: 1
         instructions: Task instructions go here
         # Additional fields depending on task type
-```
+\`\`\`
 
 ### Task Types and Their Fields
 
 #### Matching Task
 
-```yaml
+\`\`\`yaml
 - id: matching-1
   type: matching
   taskNumber: 1
@@ -58,11 +58,11 @@ sections:
     - A
     - B
     # ...
-```
+\`\`\`
 
 #### True/False/Not Stated Task
 
-```yaml
+\`\`\`yaml
 - id: true-false-1
   type: trueFalseNotStated
   taskNumber: 2
@@ -77,11 +77,11 @@ sections:
     - A
     - B
     # ...
-```
+\`\`\`
 
 #### Multiple Choice Task
 
-```yaml
+\`\`\`yaml
 - id: multiple-choice-1
   type: multipleChoice
   taskNumber: 3
@@ -95,11 +95,11 @@ sections:
         - Option 2
         - Option 3
     # More questions...
-```
+\`\`\`
 
 #### Text Completion Task
 
-```yaml
+\`\`\`yaml
 - id: text-completion-1
   type: textCompletion
   taskNumber: 4
@@ -114,17 +114,17 @@ sections:
     - A
     - B
     # ...
-```
+\`\`\`
 
 ## Accessing Your Exam
 
 Once you've created your YAML file, your exam will be available at:
 
-```
+\`\`\`
 http://localhost:3000/exams/your-exam-id
-```
+\`\`\`
 
 Where `your-exam-id` is the `id` field from your YAML file.
-```
+\`\`\`
 
 Let's update the package.json to include the necessary dependencies:
