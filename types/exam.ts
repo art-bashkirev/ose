@@ -44,6 +44,43 @@ export interface TextCompletionTask extends BaseTask {
   gapLabels: string[]
 }
 
+// Grammar task
+export interface GrammarItem {
+  id: number
+  sentence: string
+  originalWord: string
+}
+
+export interface GrammarTask extends BaseTask {
+  type: "grammar"
+  items: GrammarItem[]
+}
+
+// Word Formation task
+export interface WordFormationItem {
+  id: number
+  sentence: string
+  baseWord: string
+}
+
+export interface WordFormationTask extends BaseTask {
+  type: "wordFormation"
+  items: WordFormationItem[]
+}
+
+// Gap Fill Multiple Choice task
+export interface GapChoice {
+  id: number
+  options: string[]
+}
+
+export interface GapFillMultipleChoiceTask extends BaseTask {
+  type: "gapFillMultipleChoice"
+  text: string
+  choices: GapChoice[]
+  startingNumber: number
+}
+
 // Section types
 export interface BaseSection {
   id: string
@@ -58,16 +95,22 @@ export interface ListeningSection extends BaseSection {
 
 export interface ReadingSection extends BaseSection {
   type: "reading"
-  tasks: Array<TextCompletionTask>
+  tasks: Array<TextCompletionTask | GapFillMultipleChoiceTask>
+}
+
+export interface GrammarSection extends BaseSection {
+  type: "grammar"
+  tasks: Array<GrammarTask | WordFormationTask>
 }
 
 // Exam type
 export interface Exam {
   id: string
   title: string
-  sections: Array<ListeningSection | ReadingSection>
+  sections: Array<ListeningSection | ReadingSection | GrammarSection>
 }
 
 export type ExamData = Exam
 export type ReadingSectionData = ReadingSection
 export type ListeningSectionData = ListeningSection
+export type GrammarSectionData = GrammarSection

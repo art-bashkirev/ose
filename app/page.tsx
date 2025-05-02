@@ -11,6 +11,11 @@ const availableExams = [
     title: "Math Exam 2025",
     description: "Demonstration version of the Math Exam for 2025",
   },
+  {
+    id: "english-grammar-exam",
+    title: "English Grammar Exam",
+    description: "Grammar and vocabulary exercises for English exam",
+  },
 ]
 
 export default function Home() {

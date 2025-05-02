@@ -1,5 +1,6 @@
 import { ListeningSection } from "./sections/listening-section"
 import { ReadingSection } from "./sections/reading-section"
+import { GrammarSection } from "./sections/grammar-section"
 import type { Exam as ExamType } from "@/types/exam"
 
 interface ExamProps {
@@ -24,6 +25,10 @@ export function Exam({ data }: ExamProps) {
 
         if (section.type === "reading") {
           return <ReadingSection key={section.id} data={section} />
+        }
+
+        if (section.type === "grammar") {
+          return <GrammarSection key={section.id} data={section} />
         }
 
         return null

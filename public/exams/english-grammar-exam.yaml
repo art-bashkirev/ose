@@ -1,0 +1,130 @@
+id: english-grammar-exam
+title: Демонстрационный вариант ЕГЭ 2025 г. АНГЛИЙСКИЙ ЯЗЫК, 11 класс. Грамматика и лексика
+
+sections:
+  - id: grammar
+    type: grammar
+    title: Раздел 3. Грамматика и лексика
+    tasks:
+      - id: grammar-task-1
+        type: grammar
+        taskNumber: 19
+        instructions: >
+          Прочитайте приведённый ниже текст / приведённые ниже тексты. 
+          Преобразуйте, если необходимо, слова, напечатанные заглавными буквами 
+          в конце строк, обозначенных номерами 19–24, так, чтобы они 
+          грамматически соответствовали содержанию текстов. Заполните 
+          пропуски полученными словами. Каждый пропуск соответствует 
+          отдельному заданию из группы 19–24.
+        items:
+          - id: 19
+            sentence: "The legends of ancient Greece tell us about a mythical creature, \"part man and part bull\", called the Minotaur. People were ______________ afraid of this strange and terrible beast in a deep, dark Labyrinth on the island of Crete."
+            originalWord: "LIVE"
+          - id: 20
+            sentence: "The Labyrinth ______________ by the ingenious mind of Daedalus."
+            originalWord: "DESIGN"
+          - id: 21
+            sentence: "Daedalus was a brilliant architect and inventor – in fact, he was so brilliant that King Minos of Crete ______________ to let him go back to his home in Athens. Instead, he kept him as a prisoner."
+            originalWord: "NOT WANT"
+          - id: 22
+            sentence: "Daedalus lived with his son Icarus in a tower of the palace, and King Minos made him invent weapons that would make his army and navy even ______________ than they already were."
+            originalWord: "POWERFUL"
+          - id: 23
+            sentence: "Although Daedalus and Icarus had every comfort that they ______________ ask for, the father longed to return home to Athens. Icarus hardly remembered his city, but he too wanted to leave, because he longed to run and play in the open, rather than be in a tower all day."
+            originalWord: "CAN"
+          - id: 24
+            sentence: "Daedalus looked out at the waves of the sea, and he realised that even if they managed to slip out of the tower and find a little boat, they would not be able to sail far. One of King Minos's ______________ would spot and catch them very quickly."
+            originalWord: "SEAMAN"
+
+      - id: word-formation-task-1
+        type: wordFormation
+        taskNumber: 25
+        instructions: >
+          Прочитайте приведённый ниже текст. Образуйте от слов, напечатанных заглавными 
+          буквами в конце строк, обозначенных номерами 25–29, однокоренные слова так, 
+          чтобы они грамматически и лексически соответствовали содержанию текста. 
+          Заполните пропуски полученными словами. Каждый пропуск соответствует 
+          отдельному заданию из группы 25–29.
+        items:
+          - id: 25
+            sentence: "Hobbies are a great way to relax and unwind after a busy day at school or at work. One of the most popular hobbies nowadays is sketching. It is ______________ a good hobby for you if you want to start thinking in a different way."
+            baseWord: "DEFINITE"
+          - id: 26
+            sentence: "Sketching develops your ______________ ."
+            baseWord: "CREATE"
+          - id: 27
+            sentence: "It can be very helpful for your personal ______________ ."
+            baseWord: "DEVELOP"
+          - id: 28
+            sentence: "Besides, you can apply the skills you learn through sketching in numerous ways in your life. For example, you can more ______________ interested in a career of an artist."
+            baseWord: "ILLUSTRATE"
+          - id: 29
+            sentence: "Moreover, you can use sketching to record your best holiday because your drawings will be the best mementos of your feelings and emotions and improve your ______________ skills."
+            baseWord: "COMMUNICATE"
+
+  - id: reading
+    type: reading
+    title: Раздел 2. Чтение
+    tasks:
+      - id: gap-fill-multiple-choice-1
+        type: gapFillMultipleChoice
+        taskNumber: 30
+        instructions: >
+          Прочитайте текст с пропусками, обозначенными номерами 30–36. Эти 
+          номера соответствуют заданиям 30–36, в которых представлены 
+          возможные варианты ответов. Запишите в поле ответа цифру 1, 2, 3 или 4, 
+          соответствующую выбранному Вами варианту ответа.
+        text: |
+          Going on a hike
+
+          Simon and I were in a school football team. Occasionally, the team took field trips to places outside of our neighborhood on the weekends. Last week, our coach Mr. Brown [30] _______ we were going on a hike through a forest in a state park.
+
+          Simon is my best friend, and the two of us had both liked the trips to the museums, plays, and basketball games. We weren't all that [31] _______ in the outdoors. Mr. Brown claimed that we'd really enjoy discovering how amazing nature can be – especially for the big city kids. Simon and I were sure we'd rather be back home playing video games.
+
+          Now we were in a state park, marching through woods as [32] _______ as a grizzly bear's fur. Our group of 12 kids had been hiking for a good 30 minutes when Simon and I grew bored and stepped away from the group to take some pictures.
+
+          I looked around, shouting, "Check out that tree – it's kinda cool. Doesn't its shape [33] _______ you of an elephant?"
+
+          "That it does," Simon replied. "And look at how those rocks are formed over there. You don't see stuff like that in the city, now do you?"
+
+          For the next few minutes, we got caught up in [35] _______ flowers, leaves, animals, and little caves we hadn't seen before. The deeper we went into the forest, the more it opened up to us. We were beginning to see the amazing things around us.
+
+          Out here, away from the city, I was starting to get what Mr. Brown had [36] _______ about how nature could be.
+        choices:
+          - id: 30
+            options:
+              - promoted
+              - presented
+              - announced
+              - extended
+          - id: 31
+            options:
+              - interested
+              - excited
+              - delighted
+              - inspired
+          - id: 32
+            options:
+              - thick
+              - heavy
+              - deep
+              - dense
+          - id: 33
+            options:
+              - remind
+              - recall
+              - remember
+              - recognize
+          - id: 34
+            options:
+              - discovering
+              - finding
+              - exploring
+              - searching
+          - id: 35
+            options:
+              - told
+              - spoken
+              - said
+              - talked
+        startingNumber: 30
