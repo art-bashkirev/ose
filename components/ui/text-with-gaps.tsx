@@ -10,8 +10,8 @@ interface TextWithGapsProps extends HTMLAttributes<HTMLDivElement> {
 export function TextWithGaps({ text, className, ...props }: TextWithGapsProps) {
   return (
     <div className={cn("text-sm", className)} {...props}>
+      <div className="text-with-gaps">
       <ReactMarkdown
-        className="text-with-gaps"
         components={{
           p: ({ children }) => <p className="mb-3">{children}</p>,
           h1: ({ children }) => <h1 className="text-xl font-bold mb-3 text-center">{children}</h1>,
@@ -21,6 +21,7 @@ export function TextWithGaps({ text, className, ...props }: TextWithGapsProps) {
       >
         {text}
       </ReactMarkdown>
+    </div>
     </div>
   )
 }

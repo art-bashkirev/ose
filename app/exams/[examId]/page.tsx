@@ -1,11 +1,13 @@
 "use client"
 
+import React from "react"
 import { useEffect, useState } from "react"
 import { Exam } from "@/components/exam"
 import { loadExamFromYaml } from "@/lib/yaml-parser"
 import type { Exam as ExamType } from "@/types/exam"
 
 export default function ExamPage({ params }: { params: { examId: string } }) {
+  const { examId } = React.use(params)
   const [examData, setExamData] = useState<ExamType | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -13,7 +15,7 @@ export default function ExamPage({ params }: { params: { examId: string } }) {
   useEffect(() => {
     async function loadExam() {
       try {
-        const data = await loadExamFromYaml(params.examId)
+        const data = await loadExamFromYaml(examId)
         setExamData(data)
         setLoading(false)
       } catch (err) {
@@ -23,7 +25,7 @@ export default function ExamPage({ params }: { params: { examId: string } }) {
     }
 
     loadExam()
-  }, [params.examId])
+  }, [examId])
 
   if (loading) {
     return (
