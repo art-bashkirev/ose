@@ -2,10 +2,132 @@ id: english-exam-2025
 title: Демонстрационный вариант ЕГЭ 2025 г. АНГЛИЙСКИЙ ЯЗЫК, 11 класс.
 
 sections:
+  - id: listening
+    type: listening
+    title: Раздел 1. Аудирование
+    tasks:
+      - id: matching-1
+        type: matching
+        taskNumber: 1
+        instructions: >
+          Вы услышите 6 высказываний. Установите соответствие между высказываниями каждого говорящего A–F и утверждениями, 
+          данными в списке 1–7. Используйте каждое утверждение, обозначенное соответствующей цифрой, только один раз. 
+          В задании есть одно лишнее утверждение. Вы услышите запись дважды. Занесите свои ответы в таблицу.
+        statements:
+          - Celebrating New Year has a long history.
+          - Good food is the most important thing for New Year.
+          - New Year is the best time for new beginnings.
+          - There are extravagant ways to celebrate New Year.
+          - It's important to be with your relatives.
+          - You don't need a special time to start something.
+          - Properly preparing before New Year is important.
+        options:
+          - A
+          - B
+          - C
+          - D
+          - E
+          - F
+
+      - id: true-false-not-stated-1
+        type: trueFalseNotStated
+        taskNumber: 2
+        instructions: >
+          Вы услышите диалог. Определите, какие из приведённых утверждений A–G соответствуют содержанию текста (1 – True), 
+          какие не соответствуют (2 – False) и о чём в тексте не сказано, то есть на основании текста нельзя дать ни 
+          положительного, ни отрицательного ответа (3 – Not stated). Занесите номер выбранного Вами варианта ответа в таблицу. 
+          Вы услышите запись дважды.
+        statements:
+          - letter: A
+            text: Julie has wanted to learn to draw for some time already.
+          - letter: B
+            text: Julie often works in summer.
+          - letter: C
+            text: Adam supports Julie's intention.
+          - letter: D
+            text: Julie thinks it's not necessary to learn the basics of drawing.
+          - letter: E
+            text: Adam dislikes abstract watercolour paintings.
+          - letter: F
+            text: Julie's sister goes to an art school.
+          - letter: G
+            text: Julie and Adam have been friends for a long time.
+        options:
+          - A
+          - B
+          - C
+          - D
+          - E
+          - F
+          - G
+
+      - id: multiple-choice-1
+        type: multipleChoice
+        taskNumber: 3
+        instructions: >
+          Вы услышите интервью. В заданиях 3-9 запишите в поле ответа цифру 1, 2 или 3, соответствующую выбранному Вами 
+          варианту ответа. Вы услышите запись дважды.
+        questions:
+          - id: mc-q-1
+            taskNumber: 3
+            questionText: What do we learn about Lisa Black at the beginning of the interview?
+            options:
+              - She has two world-famous books
+              - She has an undergraduate degree in psychology
+              - All of her books are bestsellers
+          - id: mc-q-2
+            taskNumber: 4
+            questionText: According to Lisa, what makes her crime novels different from others?
+            options:
+              - They are based on real criminal cases
+              - They include detailed scientific explanations
+              - They focus on the psychology of criminals
+          - id: mc-q-3
+            taskNumber: 5
+            questionText: What does Lisa say about her writing process?
+            options:
+              - She plans every detail before starting
+              - She often changes the plot while writing
+              - She writes only when she feels inspired
+
   - id: reading
     type: reading
     title: Раздел 2. Чтение
     tasks:
+      - id: headings-match-1
+        type: headingsMatch
+        taskNumber: 10
+        instructions: >
+          Установите соответствие между текстами A–G и заголовками 1–8. 
+          Занесите свои ответы в таблицу. Используйте каждую цифру только 
+          один раз. В задании один лишний заголовок.
+        headings:
+          - number: 1
+            text: Fast but expensive
+          - number: 2
+            text: Both benefits and downsides
+          - number: 3
+            text: The least option
+          - number: 4
+            text: Options to choose from
+          - number: 5
+            text: The best choice
+          - number: 6
+            text: Ways to save
+          - number: 7
+            text: Inexpensive but unreliable
+          - number: 8
+            text: Do not get confused
+        paragraphs:
+          - letter: A
+            text: "The first decision when visiting England is whether to travel by private car or use the extensive public transport system. Having your own car means you can make the best use of time and reach remote places, but rental and fuel costs can be expensive and finding parking is difficult. London has an excellent public transport network, which includes a reliable system of trains and coaches (buses), is often the better choice for getting around in the United Kingdom. Aside from London, England's city centres with multiple pedestrian streets are very walkable."
+          - letter: B
+            text: "For long-distance travel around England, trains are generally faster and more comfortable than buses but are usually much more expensive. The English like to moan about their trains, but around 85% run on time, and major stations are well-equipped – with super helpful staff and a range of food outlets. If you have a flexible schedule, train tickets can be much cheaper if booked exceptionally early, so it is always worth booking as far in advance as you can. Sometimes buying two single tickets works out cheaper than buying a return."
+          - letter: C
+            text: "Long-distance buses are known as coaches in the UK, and services run between all major towns and cities. If you're on a tight budget, coaches are nearly always the cheapest way to get around England, although they are also the slowest and sometimes less comfortable. If you book early or travel at off-peak periods, coach tickets can be very cheap. If you are under the age of 26, there is also a RailCard, and it's very cheap. If you are with a small group of friends and you make it in time for your flight. The two major coach companies are National Express and Megabus."
+          - letter: D
+            text: "Travelling by car or motorcycle around England means you have more flexibility and mobility, and you can reach more remote parts of the country. Downsides for drivers include regular traffic jams, the high price of fuel, the cost of car insurance, and parking fees in cities and tourist towns. Compared with many other countries, England is a small place. If you have time, by using a mix of train, bus, taxi, walking and occasionally hiring a car, you can get almost anywhere in England without having to drive."
+        
       - id: text-completion-1
         type: textCompletion
         taskNumber: 11
@@ -39,3 +161,90 @@ sections:
           - D
           - E
           - F
+
+      - id: reading-passage-1
+        type: readingPassage
+        instructions: >
+          Прочитайте текст и выполните задания 12–18. В каждом задании 
+          запишите в поле ответа цифру 1, 2, 3 или 4, соответствующую выбранному 
+          Вами варианту ответа.
+        text: |
+          ## Should children be allowed to retake tests?
+
+          My daughter suffered from stress upset that she'd failed a physics test she thought she'd been prepared for. She was worried it would bring down her overall grade at the end of the first marking period. A half-hour later, she texted to say all was good. Her teacher allowed her to take a retest. We got all the problems right this time, and her grade was back where it should be.
+
+          At first one hand, I was pleased that she'd taken the initiative to fix what she viewed as a problem. On the other hand, I wasn't sure how I felt about this infinite redo approach.
+
+          When I heard that my daughter was allowed to go back and correct her mistakes, my mind instantly went to all the professionals in the real world – doctors, firefighters, editors who need to get things right the first time – more specifically, editors who need to get their jobs right the first time. With some jobs, "later" isn't an option. It's the nature of the life-and-death professions. When I spent years working as a live TV show producer. There were no second takes there.
+
+          As with all education research, both pros and cons have been tallied and reported. Some of the pros include the assertion that letting kids retake tests reduces cheating, makes them responsible for their own grades and helps them better evaluate their own learning.
+
+          The cons are based on the idea that retakes enable procrastination until they've fallen too far behind, leading to stress, and teachers needing to teach separate lessons to those who passed and those who didn't.
+
+          Then I tried to my focus group of one: my husband, a middle school math and physics teacher who has, for years, allowed his students to redo their homework and in-class work as many times as they wish in order to get to 100 %.
+
+          According to him, the research on this technique is beneficial. He stressed, "Homework and in-class work is formative assessment, which is the key here. Homework and in-class work is practice. Doing the work correctly over and over again is the only way to improve. Tests are summative assessments. They measure what they've learned after all that practice. If you are a performing artist, it's the performance that matters. For athletes, it's the game. If you want to excel, learn to do things right the first time."
+
+          That brings us back to those surgeons, firefighters, brain-now case trial lawyers, television producers, cops and more who, in real life, have to get their jobs right the first time.
+
+          I believe that the best way to help students is the ultimate in summative assessment. But that assessment didn't come on the first day of training. It came after many, many years of formative assessments in the form of arguing mock trials, practicing approaches on flight simulators, and conducting rescue drills – not to mention taking paper-and-pencil tests as well.
+
+          As the education policy debate these days seems to be driven by a zero-sum game mindset. If we do things one way, we shouldn't be doing them another. As the late Stephen Sondheim wrote, "It is always 'or'? Is it never 'and'?"
+
+          And as students begin their own education, they would also benefit from a cross-section of opinions on how best to teach. It would better prepare them for living and working with a variety of people for the rest of their lives, and help them figure out how they learn best, so they can adapt accordingly.
+
+          That said, I would still prefer that my daughter got her physics equations right the first time.
+
+      - id: reading-multiple-choice-1
+        type: readingMultipleChoice
+        taskNumber: 12
+        questions:
+          - id: 1
+            questionText: The feelings of the author after her daughter's second test are best described as
+            options:
+              - relief.
+              - disappointment.
+              - anger.
+              - pride.
+          - id: 2
+            questionText: What does the phrase "There were no second takes there" in paragraph 3 mean?
+            options:
+              - There was no chance to correct mistakes.
+              - There was only one attempt to do the job.
+              - There were very little time to give you the second chance.
+              - Only the best ones were hired.
+          - id: 3
+            questionText: Which statement is TRUE?
+            options:
+              - If students are not allowed to retake tests, they become more responsible.
+              - A negative side of retakes is extra difficulty for teachers.
+              - Allowing students to retake tests is mostly useful for middle-school learners.
+              - Educators see more pros than cons in allowing students to retake tests.
+          - id: 4
+            questionText: According to the author's husband, homework is
+            options:
+              - a way to measure students' knowledge.
+              - a way to practice skills.
+              - a way to prepare for tests.
+              - a way to get good grades.
+          - id: 5
+            questionText: The author believes that professionals like surgeons and firefighters
+            options:
+              - should never make mistakes.
+              - need to practice a lot before they start working.
+              - should be allowed to correct their mistakes.
+              - are better than other professionals.
+          - id: 6
+            questionText: The phrase "zero-sum game mindset" in paragraph 10 refers to the idea that
+            options:
+              - education should be competitive.
+              - there is only one correct approach to education.
+              - teachers should focus on test scores.
+              - students should learn from their mistakes.
+          - id: 7
+            questionText: The author's conclusion about retaking tests is that
+            options:
+              - students should never be allowed to retake tests.
+              - retaking tests is beneficial for all students.
+              - different approaches to education can be valuable.
+              - her daughter should have studied harder for the physics test.

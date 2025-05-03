@@ -3,7 +3,7 @@ export interface BaseTask {
   id: string
   type: string
   taskNumber: number
-  instructions: string
+  instructions?: string
 }
 
 // Matching task
@@ -81,6 +81,39 @@ export interface GapFillMultipleChoiceTask extends BaseTask {
   startingNumber: number
 }
 
+// Headings Match task
+export interface HeadingsMatchTask extends BaseTask {
+  type: "headingsMatch"
+  headings: Array<{
+    number: number
+    text: string
+  }>
+  paragraphs: Array<{
+    letter: string
+    text: string
+  }>
+}
+
+// Reading Passage task
+export interface ReadingPassageTask extends Omit<BaseTask, "taskNumber"> {
+  type: "readingPassage"
+  text: string
+  instructions?: string
+}
+
+// Reading Multiple Choice task
+export interface ReadingMultipleChoiceQuestion {
+  id: number
+  questionText: string
+  options: string[]
+}
+
+// Remove the startingNumber from ReadingMultipleChoiceTask if it's not needed
+export interface ReadingMultipleChoiceTask extends BaseTask {
+  type: "readingMultipleChoice"
+  questions: ReadingMultipleChoiceQuestion[]
+}
+
 // Section types
 export interface BaseSection {
   id: string
@@ -95,7 +128,9 @@ export interface ListeningSection extends BaseSection {
 
 export interface ReadingSection extends BaseSection {
   type: "reading"
-  tasks: Array<TextCompletionTask | GapFillMultipleChoiceTask>
+  tasks: Array<
+    TextCompletionTask | GapFillMultipleChoiceTask | HeadingsMatchTask | ReadingPassageTask | ReadingMultipleChoiceTask
+  >
 }
 
 export interface GrammarSection extends BaseSection {

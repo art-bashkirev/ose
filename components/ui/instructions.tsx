@@ -1,28 +1,24 @@
-import { cn } from "@/lib/utils";
-import type { HTMLAttributes, ReactNode } from "react";
-import ReactMarkdown from "react-markdown";
+import { cn } from "@/lib/utils"
+import type { HTMLAttributes, ReactNode } from "react"
+import ReactMarkdown from "react-markdown"
 
 interface InstructionsProps extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode | string;
+  children: ReactNode | string
 }
 
-export function Instructions({
-  children,
-  className,
-  ...props
-}: InstructionsProps) {
+export function Instructions({ children, className, ...props }: InstructionsProps) {
+  // Don't render anything if children is empty
+  if (!children || (typeof children === "string" && children.trim() === "")) {
+    return null
+  }
+
   return (
-    <div
-      className={cn("border border-gray-300 p-3 bg-white text-sm", className)}
-      {...props}
-    >
+    <div className={cn("text-sm", className)} {...props}>
       {typeof children === "string" ? (
-        <div className="instructions-text">
-          <ReactMarkdown>{children}</ReactMarkdown>
-        </div>
+        <ReactMarkdown className="instructions-text">{children}</ReactMarkdown>
       ) : (
         children
       )}
     </div>
-  );
+  )
 }
