@@ -54,8 +54,8 @@ export default function ExamPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-100 py-8">
-      <div id="exam-paper" className="a4-page">
+    <main className="page">
+      <div id="exam-paper" className="min-h-screen bg-gray-100 py-8">
         <Exam data={examData} />
       </div>
     </main>

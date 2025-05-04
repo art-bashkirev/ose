@@ -92,3 +92,66 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  @page {
+    margin: 0 !important;
+  }
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+  }
+  html body main.py-8, html body .py-8 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .py-8 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  main.py-8, .py-8, *[class*="py-8"] {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  *[class*="py-8"], *[class*="py-8"] * {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  * {
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+  }
+  .a4-page {
+    width: 100% !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    background: white !important;
+    border: none !important;
+  }
+  header, .header, .top-bar, .navbar {
+    background: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    box-shadow: none !important;
+  }
+  #exam-paper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
