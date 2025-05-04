@@ -1,7 +1,5 @@
 "use client"
-
-import { BaseTask } from "./base-task"
-import { useMemo } from "react"
+import { TextWithGaps } from "@/components/ui/text-with-gaps"
 
 interface GapChoice {
   id: number
@@ -13,62 +11,48 @@ interface GapFillMultipleChoiceTaskProps {
   instructions: string
   text: string
   choices: GapChoice[]
-  startingNumber: number
 }
 
-export function GapFillMultipleChoiceTask({
-  taskNumber,
-  instructions,
-  text,
-  choices,
-  startingNumber = 30,
-}: GapFillMultipleChoiceTaskProps) {
-  // Parse the text to replace gap markers with styled gaps
-  const formattedText = useMemo(() => {
-    let processedText = text
-
-    // Replace gap markers like [30] with styled spans
-    choices.forEach((choice) => {
-      const gapMarker = `[${choice.id}]`
-      const gapElement = `<span class="inline-block w-6 h-6 align-middle text-center border border-gray-400 bg-gray-100 mx-1 font-bold">${choice.id}</span>`
-      processedText = processedText.replace(gapMarker, gapElement)
-    })
-
-    return processedText
-  }, [text, choices])
+export function GapFillMultipleChoiceTask({ taskNumber, instructions, text, choices }: GapFillMultipleChoiceTaskProps) {
+  // Process the text to ensure gap markers are properly formatted for TextWithGaps
+  const processedText = text.replace(/\[(\d+)\]/g, (_, num) => `**[${num}]**`)
 
   return (
-    <BaseTask taskNumber={taskNumber}>
-      <div className="p-3">
-        <div className="mb-4 border border-gray-300 p-2 bg-gray-50 text-sm">
-          <p>{instructions}</p>
-        </div>
-
-        {/* Text with gaps */}
-        <div className="mb-6 text-sm" dangerouslySetInnerHTML={{ __html: formattedText }} />
-
-        {/* Answer choices */}
-        <div className="space-y-4">
-          {choices.map((choice) => (
-            <div key={choice.id} className="border-t pt-2">
-              <div className="flex items-center mb-2">
-                <div className="w-6 h-6 border border-gray-400 text-center font-bold mr-2">{choice.id}</div>
-                <div className="text-sm">Ответ:</div>
-                <div className="w-8 h-8 border border-gray-400 ml-2"></div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-2">
-                {choice.options.map((option, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="w-6 text-center mr-1">{index + 1})</div>
-                    <div className="text-sm">{option}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+    <div className="mb-6">
+      {/* Remove duplicated instructions */}
+      <div className="border border-gray-400 mb-4">
+        <div className="p-3">
+          <TextWithGaps text={processedText} />
         </div>
       </div>
-    </BaseTask>
+
+      {/* Grid-like layout for answers */}
+      <div className="space-y-4">
+        {choices.map((choice) => (
+          <div key={choice.id} className="relative flex flex-col">
+            {/* Question number in margin */}
+            <div className="absolute -left-10 top-0 w-8 h-8 flex items-center justify-center border border-gray-400 bg-white text-base font-bold">
+              {choice.id}
+            </div>
+
+            {/* Options in a row */}
+            <div className="flex flex-1 space-x-6 mb-2">
+              {choice.options.map((option, index) => (
+                <div key={index} className="flex items-start">
+                  <span className="mr-1">{index + 1})</span>
+                  <span>{option}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Answer line */}
+            <div className="flex items-center">
+              <span className="mr-2">Ответ:</span>
+              <div className="w-8 h-8 border border-gray-400"></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }

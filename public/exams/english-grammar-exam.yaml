@@ -45,6 +45,7 @@ sections:
           чтобы они грамматически и лексически соответствовали содержанию текста. 
           Заполните пропуски полученными словами. Каждый пропуск соответствует 
           отдельному заданию из группы 25–29.
+        title: "Hobbies and Creativity"
         items:
           - id: 25
             sentence: "Hobbies are a great way to relax and unwind after a busy day at school or at work. One of the most popular hobbies nowadays is sketching. It is ______________ a good hobby for you if you want to start thinking in a different way."
@@ -62,10 +63,6 @@ sections:
             sentence: "Moreover, you can use sketching to record your best holiday because your drawings will be the best mementos of your feelings and emotions and improve your ______________ skills."
             baseWord: "COMMUNICATE"
 
-  - id: reading
-    type: reading
-    title: Раздел 2. Чтение
-    tasks:
       - id: gap-fill-multiple-choice-1
         type: gapFillMultipleChoice
         taskNumber: 30
@@ -75,7 +72,7 @@ sections:
           возможные варианты ответов. Запишите в поле ответа цифру 1, 2, 3 или 4, 
           соответствующую выбранному Вами варианту ответа.
         text: |
-          Going on a hike
+          ## Going on a hike
 
           Simon and I were in a school football team. Occasionally, the team took field trips to places outside of our neighborhood on the weekends. Last week, our coach Mr. Brown [30] _______ we were going on a hike through a forest in a state park.
 
@@ -87,9 +84,9 @@ sections:
 
           "That it does," Simon replied. "And look at how those rocks are formed over there. You don't see stuff like that in the city, now do you?"
 
-          For the next few minutes, we got caught up in [35] _______ flowers, leaves, animals, and little caves we hadn't seen before. The deeper we went into the forest, the more it opened up to us. We were beginning to see the amazing things around us.
+          For the next few minutes, we got caught up in [34] _______ flowers, leaves, animals, and little caves we hadn't seen before. The deeper we went into the forest, the more it opened up to us. We were beginning to see the amazing things around us.
 
-          Out here, away from the city, I was starting to get what Mr. Brown had [36] _______ about how nature could be.
+          Out here, away from the city, I was starting to get what Mr. Brown had [35] _______ about how wonderful nature could be.
         choices:
           - id: 30
             options:
@@ -127,4 +124,41 @@ sections:
               - spoken
               - said
               - talked
-        startingNumber: 30
+
+  - id: reading
+    type: reading
+    title: Раздел 2. Чтение
+    tasks:
+      - id: headings-match-1
+        type: headingsMatch
+        taskNumber: 10
+        instructions: >
+          Установите соответствие между текстами A–G и заголовками 1–8. 
+          Занесите свои ответы в таблицу. Используйте каждую цифру только 
+          один раз. В задании один лишний заголовок.
+        headings:
+          - number: 1
+            text: Fast but expensive
+          - number: 2
+            text: Both benefits and downsides
+          - number: 3
+            text: The least option
+          - number: 4
+            text: Options to choose from
+          - number: 5
+            text: The best choice
+          - number: 6
+            text: Ways to save
+          - number: 7
+            text: Inexpensive but unreliable
+          - number: 8
+            text: Do not get confused
+        paragraphs:
+          - letter: A
+            text: "The first decision when visiting England is whether to travel by private car or use the extensive public transport system. Having your own car means you can make the best use of time and reach remote places, but rental and fuel costs can be expensive and finding parking is difficult. London has an excellent public transport network, which includes a reliable system of trains and coaches (buses), is often the better choice for getting around in the United Kingdom. Aside from London, England's city centres with multiple pedestrian streets are very walkable."
+          - letter: B
+            text: "For long-distance travel around England, trains are generally faster and more comfortable than buses but are usually much more expensive. The English like to moan about their trains, but around 85% run on time, and major stations are well-equipped – with super helpful staff and a range of food outlets. If you have a flexible schedule, train tickets can be much cheaper if booked exceptionally early, so it is always worth booking as far in advance as you can. Sometimes buying two single tickets works out cheaper than buying a return."
+          - letter: C
+            text: "Long-distance buses are known as coaches in the UK, and services run between all major towns and cities. If you're on a tight budget, coaches are nearly always the cheapest way to get around England, although they are also the slowest and sometimes less comfortable. If you book early or travel at off-peak periods, coach tickets can be very cheap. If you are under the age of 26, there is also a RailCard, and it's very cheap. If you are with a small group of friends and you make it in time for your flight. The two major coach companies are National Express and Megabus."
+          - letter: D
+            text: "Travelling by car or motorcycle around England means you have more flexibility and mobility, and you can reach more remote parts of the country. Downsides for drivers include regular traffic jams, the high price of fuel, the cost of car insurance, and parking fees in cities and tourist towns. Compared with many other countries, England is a small place. If you have time, by using a mix of train, bus, taxi, walking and occasionally hiring a car, you can get almost anywhere in England without having to drive."

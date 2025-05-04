@@ -2,6 +2,7 @@ import { Section } from "./section"
 import { TaskGroup } from "../tasks/task-group"
 import { GrammarTask } from "../tasks/grammar-task"
 import { WordFormationTask } from "../tasks/word-formation-task"
+import { GapFillMultipleChoiceTask } from "../tasks/gap-fill-multiple-choice-task"
 import type { GrammarSection as GrammarSectionType } from "@/types/exam"
 
 interface GrammarSectionProps {
@@ -25,7 +26,25 @@ export function GrammarSection({ data }: GrammarSectionProps) {
         if (task.type === "wordFormation") {
           return (
             <TaskGroup key={task.id} instructions={task.instructions}>
-              <WordFormationTask taskNumber={task.taskNumber} instructions={task.instructions} items={task.items} />
+              <WordFormationTask
+                taskNumber={task.taskNumber}
+                instructions={task.instructions}
+                items={task.items}
+                title={task.title}
+              />
+            </TaskGroup>
+          )
+        }
+
+        if (task.type === "gapFillMultipleChoice") {
+          return (
+            <TaskGroup key={task.id} instructions={task.instructions}>
+              <GapFillMultipleChoiceTask
+                taskNumber={task.taskNumber}
+                instructions={task.instructions}
+                text={task.text}
+                choices={task.choices}
+              />
             </TaskGroup>
           )
         }

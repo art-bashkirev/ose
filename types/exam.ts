@@ -66,6 +66,7 @@ export interface WordFormationItem {
 export interface WordFormationTask extends BaseTask {
   type: "wordFormation"
   items: WordFormationItem[]
+  title?: string
 }
 
 // Gap Fill Multiple Choice task
@@ -78,7 +79,6 @@ export interface GapFillMultipleChoiceTask extends BaseTask {
   type: "gapFillMultipleChoice"
   text: string
   choices: GapChoice[]
-  startingNumber: number
 }
 
 // Headings Match task
@@ -128,14 +128,12 @@ export interface ListeningSection extends BaseSection {
 
 export interface ReadingSection extends BaseSection {
   type: "reading"
-  tasks: Array<
-    TextCompletionTask | GapFillMultipleChoiceTask | HeadingsMatchTask | ReadingPassageTask | ReadingMultipleChoiceTask
-  >
+  tasks: Array<TextCompletionTask | HeadingsMatchTask | ReadingPassageTask | ReadingMultipleChoiceTask>
 }
 
 export interface GrammarSection extends BaseSection {
   type: "grammar"
-  tasks: Array<GrammarTask | WordFormationTask>
+  tasks: Array<GrammarTask | WordFormationTask | GapFillMultipleChoiceTask>
 }
 
 // Exam type

@@ -4,8 +4,12 @@ import { useEffect, useState } from "react"
 import { Exam } from "@/components/exam"
 import { loadExamFromYaml } from "@/lib/yaml-parser"
 import type { Exam as ExamType } from "@/types/exam"
+import { useParams } from "next/navigation"
 
-export default function ExamPage({ params }: { params: { examId: string } }) {
+export default function ExamPage() {
+  const params = useParams()
+  const examId = params.examId as string
+
   const [examData, setExamData] = useState<ExamType | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -13,7 +17,7 @@ export default function ExamPage({ params }: { params: { examId: string } }) {
   useEffect(() => {
     async function loadExam() {
       try {
-        const data = await loadExamFromYaml(params.examId)
+        const data = await loadExamFromYaml(examId)
         setExamData(data)
         setLoading(false)
       } catch (err) {
@@ -23,7 +27,7 @@ export default function ExamPage({ params }: { params: { examId: string } }) {
     }
 
     loadExam()
-  }, [params.examId])
+  }, [examId])
 
   if (loading) {
     return (
