@@ -9,7 +9,7 @@ interface TaskGroupProps {
 export function TaskGroup({ instructions, children }: TaskGroupProps) {
   return (
     <div className="mb-8">
-      <Instructions className="mb-4">{instructions}</Instructions>
+      {instructions && <Instructions className="mb-4">{instructions}</Instructions>}
       <div>{children}</div>
     </div>
   )

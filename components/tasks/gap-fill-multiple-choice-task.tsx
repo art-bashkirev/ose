@@ -8,18 +8,16 @@ interface GapChoice {
 
 interface GapFillMultipleChoiceTaskProps {
   taskNumber: number
-  instructions: string
   text: string
   choices: GapChoice[]
 }
 
-export function GapFillMultipleChoiceTask({ taskNumber, instructions, text, choices }: GapFillMultipleChoiceTaskProps) {
+export function GapFillMultipleChoiceTask({ taskNumber, text, choices }: GapFillMultipleChoiceTaskProps) {
   // Process the text to ensure gap markers are properly formatted for TextWithGaps
   const processedText = text.replace(/\[(\d+)\]/g, (_, num) => `**[${num}]**`)
 
   return (
     <div className="mb-6">
-      {/* Remove duplicated instructions */}
       <div className="border border-gray-400 mb-4">
         <div className="p-3">
           <TextWithGaps text={processedText} />

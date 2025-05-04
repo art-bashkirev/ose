@@ -39,12 +39,7 @@ export function GrammarSection({ data }: GrammarSectionProps) {
         if (task.type === "gapFillMultipleChoice") {
           return (
             <TaskGroup key={task.id} instructions={task.instructions}>
-              <GapFillMultipleChoiceTask
-                taskNumber={task.taskNumber}
-                instructions={task.instructions}
-                text={task.text}
-                choices={task.choices}
-              />
+              <GapFillMultipleChoiceTask taskNumber={task.taskNumber} text={task.text} choices={task.choices} />
             </TaskGroup>
           )
         }

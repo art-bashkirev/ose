@@ -13,12 +13,16 @@ export function Instructions({ children, className, ...props }: InstructionsProp
   }
 
   return (
-    <div className={cn("text-sm", className)} {...props}>
-      {typeof children === "string" ? (
-        <ReactMarkdown className="instructions-text">{children}</ReactMarkdown>
-      ) : (
-        children
-      )}
+    <div className={cn("border border-gray-400", className)} {...props}>
+      <div className="p-3 bg-white">
+        {typeof children === "string" ? (
+          <div className="instructions-text text-sm">
+            <ReactMarkdown>{children}</ReactMarkdown>
+          </div>
+        ) : (
+          children
+        )}
+      </div>
     </div>
   )
 }
