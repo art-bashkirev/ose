@@ -1,0 +1,346 @@
+id: english-exam-2025
+title: Демонстрационный вариант ЕГЭ 2025 г. АНГЛИЙСКИЙ ЯЗЫК, MUSIC HISTORY EDITION, 11 класс.
+
+sections:
+  - id: reading
+    type: reading
+    title: Раздел 2. Чтение
+    tasks:
+      - id: headings-match-1
+        type: headingsMatch
+        instructions: >
+          Установите соответствие между текстами ***A–H*** и заголовками ***1–10***.
+          Занесите свои ответы в таблицу.
+          Используйте каждую цифру ***только один раз***.
+          ***В задании два лишних заголовка.***
+        taskNumber: 10
+        headings:
+          - number: 1
+            text: The Shadow of Unresolved Violence
+          - number: 2
+            text: Death by Misfortune
+          - number: 3
+            text: Composers’ Fading Fame
+          - number: 4
+            text: Genius and Scandal
+          - number: 5
+            text: Perfection's Farewell
+          - number: 6
+            text: Of Cases Most Peculiar
+          - number: 7
+            text: Ironic Accident
+          - number: 8
+            text: Forgotten until Revival
+          - number: 9
+            text: Reputations Lost and Found
+          - number: 10
+            text: Harmony and Discord
+        paragraphs:
+          - letter: A # 10
+            text: |
+              History’s account of musical brilliance is often filled with paradox, none more so than the fates that befell some of Europe’s most illustrious composers.
+              Their deaths, colored by violence, neglect, or ambiguous legacy, challenge the romantic notion that genius earns reward or peace.
+              Instead, the closing chapters of their lives can read more like tragic comedy than serenely concluded prose.
+          - letter: B # 1
+            text: |
+              Consider Jean-Marie Leclair, whose works radiate ease and are often considered “sugary music”.
+              In 1764, Leclair was found stabbed to death in his Paris home, a case so entangled with family suspicion that it remains unsolved.
+              The strongest suspicion lies on his family members. However, the motives behind others could not be considered pertinent at the time.
+          - letter: C # 7
+            text: |
+              A more sardonic end awaited Jean-Baptiste Lully, the founding father of French Opera.
+              Lully’s career thrived at the glittering court of Louis XIV, yet he met his undoing with the very instrument of his vocation.
+              Striking his own foot with a conducting staff mid-performance, he developed gangrene but refused amputation, resulting in his untimely death.
+              The circumstance brimmed with the twisted humor of fate: a master of musical control felled by an accidental lapse.
+          - letter: D # 5
+            text: |
+              Rameau’s passing in 1764, by contrast, attracted less drama but not less complexity.
+              Renowned for his theoretical innovations, the pioneering Baroque composer interrupted a priest's hymn with his renowned rebuke “What the devil do you mean to sing to me, priest? You are out of tune.”
+              Yet conflicting reports about his state of mind linger, although all highlight the composer's unyielding ear.
+          - letter: E # 8
+            text: |
+              Not all tragedy is loud.
+              Antonio Vivaldi, whose concertos overflow with exuberance, died in Vienna far from the acclaim that had once surrounded him.
+              Aimless patronage and shifting tastes condemned him to poverty in his final years; he was buried in a pauper’s grave, less a celebrated icon than a cautionary tale.
+              Decades of neglect muted his voice until a twentieth-century revival rekindled interest in the “Red Priest”.
+          - letter: F # 4
+            text: |
+              Then there is Alessandro Stradella, whose career oscillated between genius and scandal.
+              Infamous for brazen affairs and debts, Stradella’s murder in Genoa was as sensational as his life.
+              The circumstances - revenge, jealousy, financial disputes—are inseparable from the music, fueling speculation and affording his works a certain illicit allure.
+          - letter: G # 6
+            text: |
+              Some musical legacies are haunted not by violence but by ambiguity.
+              Josquin des Prez, celebrated in his time, became a figure of almost mythic inscrutability.
+              Attribution of his works spiraled into confusion as later composers and copyists freely borrowed his name, muddying the historical record.
+              His true voice now emerges only with persistent scholarship that sifts legend from fact.
+          - letter: H # 9
+            text: |
+              The annals of music abound in other troubled tales - Carlo Gesualdo’s tormented psyche, which shaped both his madrigals and infamous crimes, and the quiet pathos of Antonio Salieri, caricatured for centuries in connection to Mozart’s demise.
+              Or Heinrich Schütz, succumbed not to drama but to complete eclipse - his burial site was lost to history when Frauenkirche was torn down to be completely rebuilt.
+              In the sweep of history, reputations have risen, fallen, and been reborn. a reminder that the end of life is rarely the end of a story.
+      - id: text-completion-1
+        type: textCompletion
+        taskNumber: 11
+        instructions: >
+          Прочитайте текст и заполните пропуски ***A–F*** частями предложений, обозначенными цифрами ***1–10***. 
+          ***Несколько частей в списке 1–10 лишние***. Занесите цифры, обозначающие соответствующие части предложений, в таблицу.
+        text: |
+          ## A Voyage to Lübeck
+
+          In late 1705, Johann Sebastian Bach, still not long out of his teens, set out for Lübeck – a journey that would stretch far beyond its expected course. He had only asked for a short leave from Arnstadt, his employers presumably trusting he’d be back on schedule. **A** ______ Yet by the time Bach finally returned, winter was beginning to wane, and questions about his extended absence were circulating with increasing impatience.
+
+          Bach’s motivation for the trip was, in some ways, no secret. With Dieterich Buxtehude’s music filling Lutheran churches across the region, Lübeck had become something of a magnet for young musicians. **B** ______ When Bach reached the city, Buxtehude’s celebrated evening concerts were in full swing, offering a rare chance to hear the organist whose reputation loomed large over German music.
+
+          What occupied Bach during his months away remains a topic of speculation rather than record. **C** ______ Some point to the lure of Buxtehude’s compositions, but others suspect there was more than admiration behind his prolonged stay.
+
+          What Bach certainly discovered was that Buxtehude, after decades at the organ, was preparing to hand over his post – on one unmistakable condition. **D** ______ It was common knowledge among aspiring successors that anyone wanting the position would also be expected to marry Buxtehude’s daughter.
+
+          Several well-known musicians besides Bach found themselves weighing the offer during these years. **E** ______ Whether Bach actually considered the proposal or simply took the opportunity to learn remains unclear, but what he gained in Lübeck would echo in his later music.
+
+          To this day, how those months truly passed – intense study, awkward conversation, or both – is still mostly left to the imagination. **F** ______ The details, like Bach’s reasons, have faded, leaving only the music and the questions behind.
+        options:
+          - The offer was tempting, though the link between the position and marriage was far from unusual in those circles.
+          - With so much uncertainty, it’s easy to see why later writers have filled the gaps with their own stories.
+          - The chance to hear Buxtehude play was enough to pull musicians hundreds of miles from home.
+          - Back then, a few weeks away might raise an eyebrow, but few expected a single trip to last nearly half a year.
+          - Few reports mention Bach attending a few concerts but give little evidence that he formally sought any church position during his stay.
+          - The arrangement left some eager, while others left the city once the catch became known.
+          - It was well known that Bach had gone for musical ambitions. The question was what else he hoped to gain.
+          - Soon enough, word spread that the job came with a commitment well beyond music.
+          - It’s not hard to imagine that Lübeck’s musical life was at the heart of his journey, though practical matters may have played a part.
+          - Whatever his intentions, the city’s impact on Bach is difficult to miss in his work after his return.
+        gapLabels:
+          - A # 4
+          - B # 3
+          - C # 9
+          - D # 8
+          - E # 6
+          - F # 2
+      - id: reading-passage-1
+        type: readingPassage
+        instructions: >
+          Прочитайте текст и выполните задания ***12–18***. В каждом задании 
+          запишите в поле ответа цифру, соответствующую выбранному 
+          Вами варианту ответа.
+        text: |
+          ## The North German Organ School
+
+          The North German Organ School, which peaked primarily in the 17th and early 18th centuries, is one of the most significant movements in Western music history.
+          This musical tradition originated in the prosperous Hanseatic cities of northern Germany, where exceptional organ craftsmanship and Lutheran worship practices fostered an ideal atmosphere for musical innovation.
+          The unique characteristics of the movement, such as virtuosic improvisation, complex contrapuntal techniques, and specific stylistic contrasts, had a significant impact on keyboard composition in Europe.
+
+          Lutheran liturgical practices in northern Germany after the Reformation gave organists a level of creative freedom never before possible.
+          Lutheran organists created preludes based on hymn melodies and musical interludes between verses, in contrast to their Catholic counterparts who were mainly limited to providing accompaniment for pre-existing choral works.
+          This practice led to the development of the chorale prelude, a renowned Lutheran musical form that would become prominent in the North German tradition.
+
+          The foundational figure of the North German Organ School was Jan Pieterszoon Sweelinck (1562-1621), often called the "Orpheus of Amsterdam."
+          Though Dutch rather than German, Sweelinck taught many northern German organists in Amsterdam, earning the nickname "the maker of German organists."
+          His synthesis of English, Italian, and Franco-Flemish styles created a distinctive approach to keyboard writing that his German students would further develop. 
+          Sweelinck's variations on sacred and secular melodies established methods of ornamentation and subject development that would stretch through centuries.
+          Sweelinck's approach to chorale settings - clear presentation of the subject with increasingly elaborate variations established a model that would be expand upon in most compositions of this style.
+
+          Among Sweelinck's most influential pupils was Samuel Scheidt (1587-1654), who served as court organist in Halle.
+          His publication Tabulatura Nova (1624) was one of the first German keyboard works printed in standard notation rather than tablature—established important precedents for organ composition in northern Germany.
+          The collection includes 58 compositions demonstrating Scheidt's approach to chorale variations and his integration of multinational influences.
+          Particularly noteworthy are his sets of variations on chorale melodies which employ different contrapuntal devices in each variation.
+          His innovations in chorale treatment included the cantus firmus chorale, in which the melody appears in long notes in one voice against counterpoint in the others, and the chorale motet, which treats each phrase of the chorale melody as a subject for imitative development.
+
+          Although best known for his vocal compositions, Heinrich Schütz (1585–1672) was instrumental in the formation of the North German style.
+          The concertato style was incorporated into German music by Schütz after he studied with Giovanni Gabrieli in Venice.
+          The Italian innovations, such as expressive text declamation or virtuosic vocal writing, were adapted to German Protestant contexts in his Symphoniae Sacrae and Kleine geistliche Konzerte.
+          Declamatory passages in many North German organ works were influenced by his refined approach to text setting.
+          He also established antiphonal exchange and spatial arrangement practices that would influence instrumental compositions by introducing German music to the polychoral techniques of the Venetian school through the publication of the Psalmen Davids in 1619.
+
+          Johann Adam Reincken (1643-1722), another pivotal figure in this tradition, studied with Sweelinck's pupil Heinrich Scheidemann before becoming organist at Hamburg's Katharinenkirche, then holding it for an incredible 54 years.
+          One of the heights of his implementation of the North German form is his chorale fantasia "An Wasserflüssen Babylon," which is performed for almost 20 minutes.
+          The work begins with a common presentation of the chorale melody, followed by already established style - progressively complex variations, with each section exhibiting different figurative patterns - running sixteenth notes, triplet figures, and brilliant toccata-like passages, while maintaining the structural framework of the chorale.
+          In addition, Reincken's "Hortus Musicus," a collection of chamber sonatas, demonstrates his familiarity with Italian styles, in particular sonata da chiesa and sonata da camera.
+
+          The North German organ style is characterized by several features that set it apart from other keyboard traditions.
+          The “stylus phantasticus”, a term coined by theorist Athanasius Kircher, describes the improvisatory quality that pervades much of this repertoire.
+          Works of this school typically use contrasting sections of free passages with strictly contrapuntal writing.
+          The final evolvement of the tradition is the multi-sectional praeludia (preludes) that incorporates distinct stylistic elements within a single composition.
+          A typical praeludium begins with an improvisatory toccata featuring dramatic scalar passages and arpeggiated figurations, followed by a strict fugal section, before concluding with another free section.
+
+          After J.S. Bach's passing, the North German tradition faded as musical tastes shifted towards homophonic textures and Classical clarity.
+          However this musical tradition's unique qualities had already secured its place as one of the most important advancements in Baroque keyboard music.
+      - id: reading-multiple-choice-1
+        type: readingMultipleChoice
+        taskNumber: 12 # Starting number, Currently a workaround
+        questions:
+          - id: 1 # Hard
+            questionText: Which situation most directly enabled North German Lutheran organists to originate new musical forms not typically found in contemporaneous Catholic settings?
+            options: # B
+              - Routine improvisation upon liturgical readings prior to choral performances # tied incorrectly
+              - Permission to invent keyboard introductions and interludes around congregational hymns
+              - Close partnerships with ensembles providing continuo support for plainchant # No central role
+              - Direction from clergy emphasizing extemporized accompaniments for soloists # Nothing about soloists
+          - id: 2
+            questionText: According to the text, in what specific way did Jan Pieterszoon Sweelinck's musical approach distinguish itself among early keyboard composers?
+            options: # D
+              - He promoted collaborative improvisation between organists and choirs as a central performance practice # No mention of choirs
+              - He established polychoral techniques for Northern German instrumentalists # Not attributed here
+              - His teaching emphasised strict repetition of English styles in all chorale settings # English was influence, but not strict repetition
+              - His method relied on presenting a clear melodic foundation gradually enriched by successive ornamented variations
+          - id: 3 # Easy
+            questionText: What lasting change did Heinrich Schütz make to North German sacred composition after studying abroad, as described in the text?
+            options: # C
+              - Encouraging exclusive use of homophonic settings for Protestant psalm texts # Not exclusive
+              - Mandating a unified choral-orchestral format for Lutheran worship services # never mentioned
+              - Importing features such as expressive vocal declamation and spatially separated ensembles into Protestant liturgical music
+              - Eliminating Italian stylistic elements from instrumental works altogether # Complete opposite
+          - id: 4 # Kinda easy
+            questionText: Which organizational feature characterizes Johann Adam Reincken’s treatment of chorale themes?
+            options: # B
+              - Application of continuous free-form improvisation without thematic recurrence # Recurring theme defined - structural
+              - Use of techniques across sections while retaining an explicit connection to the central hymn melody throughout
+              - Division into purely secular solo pieces disconnected from any sacred tradition # No shift
+              - Introduction of abrupt harmonic shifts with no reference to established song forms # Obviously wrong
+          - id: 5 # Easy
+            questionText: Which of the following structural features is identified as characteristic of the multi-sectional praeludia developed by North German composers?
+            options: # D
+              - Consistent adherence to a single contrapuntal technique throughout the work # No
+              - A progression from strict contrapuntal writing to free improvisation # Kinda
+              - The integration of vocal and instrumental sections within a single composition # Of course not
+              - A sequence of highly contrasting sections
+          - id: 6 # Easy
+            questionText: 'In the context of the passage, the term "stylus phantasticus" specifically refers to:'
+            options: # Possible, A
+              - a system of notation introduced by Samuel Scheidt in Tabulatura Nova
+              - a method of organ construction unique to northern Germany
+              - a compositional approach characterised by contrasting improvisatory and contrapuntal sections
+              - a technique for performing Lutheran chorales with elaborate ornamentation
+          - id: 7 # Hard
+            questionText: Following Bach's death, how does the passage justify continued recognition for innovations originating from this northern German tradition despite its decline?
+            options: # B
+              - Their harmonic style shaped later symphonic developments more than any contemporaneous school # Misses point - no direct mention of ath. symphonic
+              - They fostered enduring practices for designing complex, multi-part compositions that influenced subsequent keyboard writing
+              - Appreciation persisted due chiefly to subsequent generations’ revival efforts during Romanticism # Outside of the scope
+              - Rejection abroad prompted native conservatories to maintain study in private societies # Nothing about abroad
+  - id: grammar
+    type: grammar
+    title: Раздел 3. Грамматика и лексика
+    tasks:
+      - id: grammar-1
+        type: wordFormation
+        taskNumber: 19 # Exact number, Currently another workaround
+        instructions: >
+          Прочитайте приведённый ниже текст / приведённые ниже тексты. 
+          Преобразуйте, если необходимо, слова, напечатанные заглавными буквами 
+          в конце строк, обозначенных номерами ***19–24***, так, чтобы они 
+          грамматически соответствовали содержанию текстов. Заполните 
+          пропуски полученными словами. Каждый пропуск соответствует 
+          отдельному заданию из группы ***19–24***.
+        title: "Musician's Role in Ancient Civilizations"
+        items:
+          - id: 19
+            sentence: "Hidden amid ruined city walls lie instruments that evoke not merely ________. Sound was ritual power before it was private pleasure."
+            baseWord: "ENTERTAIN" # ENTERTAINMENT. Noun needed
+          - id: 20
+            sentence: "To the archeomusicologist, this inheritance remains shrouded in ________. The ancient texts suggest music was central not only to calendric reckoning under moonlit skies but also to agricultural and civic prosperity."
+            baseWord: "MYSTERY" # MYSTERY. Unchanged
+          - id: 21
+            sentence: "Across empires such as Babylon or Sumeria, musicians inhabited a space both privileged and perilous. They were elevated by courts yet fundamentally ________ as rare goods exchanged among rulers."
+            baseWord: "OBJECT" # OBJECTIFIED. Describes state, participle needed
+          - id: 22
+            sentence: "Estranged from true autonomy, they would serve as instruments of ________ in the hands of kings."
+            baseWord: "SPY" # ESPIONAGE. Uncountable noun
+          - id: 23
+            sentence: "Excavations at sites have yielded instruments placed in tombs. For instance, an ancient queen accompanied by young musicians whose wrists lay eerily ________."
+            baseWord: "BIND" # BOUND. Irregular past participle, adjectively
+          - id: 24
+            sentence: "Such evidence suggests music integrated not only into the usual life and rituals but also into the notions of divine ________."
+            baseWord: "CONTINUE" # CONTINUITY. Suffix.
+      - id: grammar-2
+        type: wordFormation
+        taskNumber: 25 # Exact number, Currently another workaround
+        instructions: >
+          Прочитайте приведённый ниже текст. 
+          Образуйте от слов, напечатанных заглавными буквами 
+          в конце строк, обозначенных номерами ***25–29***, однокоренные слова так, чтобы они 
+          грамматически и лексически соответствовали содержанию текста. Заполните 
+          пропуски полученными словами. Каждый пропуск соответствует 
+          отдельному заданию из группы ***25–29***.
+        title: "Mesopotamian Music Theory and Astronomy"
+        items:
+          - id: 25
+            sentence: "By the time credible reconstructions of Mesopotamian tuning systems ________, decades of musical scholarship had already transformed the field."
+            baseWord: "PUBLISH" # Had been published. Past participle, passive voice
+          - id: 26
+            sentence: "While researchers ________ the sophistication of ancient tuning methods, their mathematical symbolism was not widely discussed until recently."
+            baseWord: "RECOGNISE" # HAD RECOGNISED. Past perfect, active voice
+          - id: 27
+            sentence: "Only after comprehensive studies ________ details about cyclical modulation did scholars begin connecting scales to celestial concepts."
+            baseWord: "REVEAL" # HAD REVEALED. Past perfect, active voice
+          - id: 28
+            sentence: "Significant interest ________ to the link between their heptatonic scales and the seven visible heavenly bodies."
+            baseWord: "GIVE" # HAS/HAD BEEN GIVEN. past or present perfect passive appropriate; "has been given" fits with "recently"
+          - id: 29
+            sentence: "Had these innovations ________ independently, later theories of musical intervals might have looked very different."
+            baseWord: "DEVELOP" # NOT BEEN DEVELOPED. perfect infinitive passive after "Had these innovations ____ independently," i.e., third conditional: "had not been developed"
+      - id: gap-fill-multiple-choice-1
+        type: gapFillMultipleChoice
+        taskNumber: 30
+        instructions: >
+          Прочитайте текст с пропусками, обозначенными номерами 30–36. Эти 
+          номера соответствуют заданиям 30–36, в которых представлены 
+          возможные варианты ответов. Запишите в поле ответа цифру 1, 2, 3 или 4, 
+          соответствующую выбранному Вами варианту ответа.
+        text: |
+          ## Querelle des Bouffons
+
+          In 1752, Parisian audiences were [30] when Giovanni Battista Pergolesi’s intermezzo *La serva padrona* was [31] at the Académie royale de musique.
+          What at first seemed a lighthearted diversion soon [32] a ferocious debate between adherents of venerable French *tragédie lyrique* and champions of the new Italian *opera buffa*.
+          Proponents of the French tradition [33] against the Italian intermezzo, accusing it of having [34] centuries of refined musical decorum in favour of frivolous antics.
+          At the same time, critics like Rousseau and Grimm [35] to underline the merits of operatic simplicity and natural sentiment, insisting that French style [36] genuine warmth and spontaneity.
+
+        choices:
+          - id: 30
+            options:
+              - up in arms
+              - taken aback # Answer
+              - primed and ready
+              - glossed over
+
+          - id: 31
+            options:
+              - rolled out
+              - premiered # Answer
+              - ushered in
+              - picked up
+
+          - id: 32
+            options:
+              - snowballed into # Answer
+              - dampened
+              - cut across
+              - knuckled down to
+
+          - id: 33
+            options:
+              - tore into # Answer
+              - lulled to
+              - shied away
+              - saw to
+
+          - id: 34
+            options:
+              - butchered
+              - eroded # Answer
+              - upheld
+              - reinvigorated
+
+          - id: 35
+            options:
+              - rallied # Answer
+              - buckled
+              - bowed
+              - ran out
+
+          - id: 36
+            options:
+              - fell short of # Answer
+              - brimmed with
+              - cut through with
+              - spoke volumes of
