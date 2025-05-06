@@ -2,19 +2,9 @@ import Link from "next/link"
 
 const availableExams = [
   {
-    id: "english-exam-2025",
+    id: "enh",
     title: "English Exam 2025",
-    description: "Demonstration version of the English Exam for 2025",
-  },
-  {
-    id: "math-exam-2025",
-    title: "Math Exam 2025",
-    description: "Demonstration version of the Math Exam for 2025",
-  },
-  {
-    id: "english-grammar-exam",
-    title: "English Grammar Exam",
-    description: "Grammar and vocabulary exercises for English exam",
+    description: "Demonstration version of the English Exam for 2025. Music History Edition",
   },
 ]
 
