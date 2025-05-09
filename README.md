@@ -1,3 +1,6 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/art-bashkirev/ose) [![wakatime](https://wakatime.com/badge/user/4ba48f15-afa9-4e4b-9321-2af5f6fc551b/project/75cf399b-2fbe-404e-80bf-44db7a51ed08.svg)](https://wakatime.com/badge/user/4ba48f15-afa9-4e4b-9321-2af5f6fc551b/project/75cf399b-2fbe-404e-80bf-44db7a51ed08)
+
+
 # Exam Component System
 
 A modular system for creating and displaying exam papers using YAML files.
