@@ -1,0 +1,22 @@
+id: english-speaking-exam
+title: Демонстрационный вариант ЕГЭ 2025 г. АНГЛИЙСКИЙ ЯЗЫК, 11 класс. Speaking
+
+sections:
+  - id: speaking
+    type: speaking
+    title: Раздел 4. Speaking
+    tasks:
+      - id: speaking-task-4
+        type: speakingDescription
+        taskNumber: 4
+        title: "Imagine that you and your friend Yashenko are doing a school project \"Parameters for the Unified State Exam\" You have found several interesting choices of parameters for problem 18, but for some technical reasons you cannot send them right now. Leave a voice message to your friend where you:"
+        bulletPoints:
+          - explain your choice of the parameters by briefly describing them and noting the differences;
+          - mention the advantages (1–2) of the two types of parameters you are considering (for example, linear vs quadratic);
+          - mention the disadvantages (1–2) of the two types of parameters;
+          - express your opinion on which parameter Ященко should finally choose for the exam and explain why.
+        images:
+          - src: "Parameter"
+            alt: "Parameter"
+          - src: "Parameter"
+            alt: "Parameter"

@@ -6,6 +6,11 @@ const availableExams = [
     title: "English Exam 2025",
     description: "Demonstration version of the English Exam for 2025. Music History Edition",
   },
+  {
+    id: "speaking",
+    title: "Слив Speaking 2025",
+    description: "",
+  }
 ]
 
 export default function Home() {
