@@ -12,9 +12,9 @@ sections:
         title: "Imagine that you and your friend Yashenko are doing a school project \"Parameters for the Unified State Exam\" You have found several interesting choices of parameters for problem 18, but for some technical reasons you cannot send them right now. Leave a voice message to your friend where you:"
         bulletPoints:
           - explain your choice of the parameters by briefly describing them and noting the differences;
-          - mention the advantages (1–2) of the two types of parameters you are considering (for example, linear vs quadratic);
+          - mention the advantages (1–2) of the two types of parameters you are considering;
           - mention the disadvantages (1–2) of the two types of parameters;
-          - express your opinion on which parameter Ященко should finally choose for the exam and explain why.
+          - express your opinion on which parameter Yashenko should finally choose for the exam and explain how to solve it.
         images:
           - src: "https://raw.githubusercontent.com/art-bashkirev/ose/refs/heads/main/public/Screenshot%202025-05-22%20023630.png"
             alt: "Parameter"
