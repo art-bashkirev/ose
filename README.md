@@ -18,10 +18,10 @@ A modular system for creating and displaying exam papers using YAML files.
     - Text Completion tasks
     - Headings Matching tasks
     - Reading Passage with Multiple Choice questions
-    - Gap Fill Multiple Choice tasks
   - **Grammar Section**:
     - Grammar transformation tasks
     - Word Formation tasks
+    - Gap Fill Multiple Choice tasks
 - Responsive design for viewing on different devices
 - Print-friendly layout
 
@@ -137,7 +137,7 @@ A modular system for creating and displaying exam papers using YAML files.
 \`\`\`yaml
 - id: reading-passage-1
   type: readingPassage
-  taskNumber: 12
+  instructions: Instructions text
   title: Passage Title
   text: |
     Full text of the reading passage with multiple paragraphs.
@@ -159,27 +159,6 @@ A modular system for creating and displaying exam papers using YAML files.
         - Option 3
         - Option 4
     # More questions...
-  startingNumber: 12
-\`\`\`
-
-#### Gap Fill Multiple Choice Task
-
-\`\`\`yaml
-- id: gap-fill-multiple-choice-1
-  type: gapFillMultipleChoice
-  taskNumber: 30
-  instructions: Instructions text
-  text: |
-    Text with numbered gaps like [30], [31], etc.
-  choices:
-    - id: 30
-      options:
-        - Option 1
-        - Option 2
-        - Option 3
-        - Option 4
-    # More choices...
-  startingNumber: 30
 \`\`\`
 
 ### Grammar Section Tasks
@@ -216,6 +195,25 @@ A modular system for creating and displaying exam papers using YAML files.
       sentence: "Another sentence with a gap."
       baseWord: "FORM"
     # More items...
+\`\`\`
+
+#### Gap Fill Multiple Choice Task
+
+\`\`\`yaml
+- id: gap-fill-multiple-choice-1
+  type: gapFillMultipleChoice
+  taskNumber: 30
+  instructions: Instructions text
+  text: |
+    Text with numbered gaps like [30], [31], etc.
+  choices:
+    - id: 30
+      options:
+        - Option 1
+        - Option 2
+        - Option 3
+        - Option 4
+    # More choices...
 \`\`\`
 
 ## Complete Exam Structure
@@ -312,7 +310,6 @@ interface ReadingSection extends BaseSection {
   type: "reading"
   tasks: Array<
     TextCompletionTask | 
-    GapFillMultipleChoiceTask | 
     HeadingsMatchTask | 
     ReadingPassageTask | 
     ReadingMultipleChoiceTask
@@ -321,7 +318,7 @@ interface ReadingSection extends BaseSection {
 
 interface GrammarSection extends BaseSection {
   type: "grammar"
-  tasks: Array<GrammarTask | WordFormationTask>
+  tasks: Array<GrammarTask | WordFormationTask | GapFillMultipleChoiceTask>
 }
 \`\`\`
 
