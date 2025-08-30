@@ -38,7 +38,7 @@ A modular system for creating and displaying exam papers using YAML files.
 
 #### Matching Task
 
-\`\`\`yaml
+```yaml
 - id: matching-1
   type: matching
   taskNumber: 1
@@ -51,11 +51,11 @@ A modular system for creating and displaying exam papers using YAML files.
     - A
     - B
     # ...
-\`\`\`
+```
 
 #### True/False/Not Stated Task
 
-\`\`\`yaml
+```yaml
 - id: true-false-1
   type: trueFalseNotStated
   taskNumber: 2
@@ -70,11 +70,11 @@ A modular system for creating and displaying exam papers using YAML files.
     - A
     - B
     # ...
-\`\`\`
+```
 
 #### Multiple Choice Task
 
-\`\`\`yaml
+```yaml
 - id: multiple-choice-1
   type: multipleChoice
   taskNumber: 3
@@ -88,13 +88,13 @@ A modular system for creating and displaying exam papers using YAML files.
         - Option 2
         - Option 3
     # More questions...
-\`\`\`
+```
 
 ### Reading Section Tasks
 
 #### Text Completion Task
 
-\`\`\`yaml
+```yaml
 - id: text-completion-1
   type: textCompletion
   taskNumber: 4
@@ -109,11 +109,11 @@ A modular system for creating and displaying exam papers using YAML files.
     - A
     - B
     # ...
-\`\`\`
+```
 
 #### Headings Match Task
 
-\`\`\`yaml
+```yaml
 - id: headings-match-1
   type: headingsMatch
   taskNumber: 10
@@ -130,22 +130,22 @@ A modular system for creating and displaying exam papers using YAML files.
     - letter: B
       text: Paragraph B text
     # ...
-\`\`\`
+```
 
 #### Reading Passage Task
 
-\`\`\`yaml
+```yaml
 - id: reading-passage-1
   type: readingPassage
   instructions: Instructions text
   title: Passage Title
   text: |
     Full text of the reading passage with multiple paragraphs.
-\`\`\`
+```
 
 #### Reading Multiple Choice Task
 
-\`\`\`yaml
+```yaml
 - id: reading-multiple-choice-1
   type: readingMultipleChoice
   taskNumber: 12
@@ -159,13 +159,13 @@ A modular system for creating and displaying exam papers using YAML files.
         - Option 3
         - Option 4
     # More questions...
-\`\`\`
+```
 
 ### Grammar Section Tasks
 
 #### Grammar Task
 
-\`\`\`yaml
+```yaml
 - id: grammar-task-1
   type: grammar
   taskNumber: 19
@@ -178,11 +178,11 @@ A modular system for creating and displaying exam papers using YAML files.
       sentence: "Another sentence with a gap."
       originalWord: "ANOTHER"
     # More items...
-\`\`\`
+```
 
 #### Word Formation Task
 
-\`\`\`yaml
+```yaml
 - id: word-formation-task-1
   type: wordFormation
   taskNumber: 25
@@ -195,11 +195,11 @@ A modular system for creating and displaying exam papers using YAML files.
       sentence: "Another sentence with a gap."
       baseWord: "FORM"
     # More items...
-\`\`\`
+```
 
 #### Gap Fill Multiple Choice Task
 
-\`\`\`yaml
+```yaml
 - id: gap-fill-multiple-choice-1
   type: gapFillMultipleChoice
   taskNumber: 30
@@ -214,13 +214,13 @@ A modular system for creating and displaying exam papers using YAML files.
         - Option 3
         - Option 4
     # More choices...
-\`\`\`
+```
 
 ## Complete Exam Structure
 
 A complete exam YAML file has the following structure:
 
-\`\`\`yaml
+```yaml
 id: exam-id
 title: Exam Title
 
@@ -233,7 +233,7 @@ sections:
       - id: task-id
         type: task-type
         # Task-specific fields
-\`\`\`
+```
 
 ## Component Types
 
@@ -269,9 +269,6 @@ The system includes the following component types:
 - `ReadingSection`: For the reading section
 - `GrammarSection`: For the grammar section
 
-### Layout Components  For the reading section
-- `GrammarSection`: For the grammar section
-
 ### Layout Components
 
 - `Exam`: Main component that renders the entire exam
@@ -283,7 +280,7 @@ The system uses TypeScript interfaces to define the structure of exam data:
 
 ### Base Types
 
-\`\`\`typescript
+```typescript
 interface BaseTask {
   id: string
   type: string
@@ -296,11 +293,11 @@ interface BaseSection {
   type: string
   title: string
 }
-\`\`\`
+```
 
 ### Section Types
 
-\`\`\`typescript
+```typescript
 interface ListeningSection extends BaseSection {
   type: "listening"
   tasks: Array<MatchingTask | TrueFalseNotStatedTask | MultipleChoiceTask>
@@ -320,17 +317,17 @@ interface GrammarSection extends BaseSection {
   type: "grammar"
   tasks: Array<GrammarTask | WordFormationTask | GapFillMultipleChoiceTask>
 }
-\`\`\`
+```
 
 ### Exam Type
 
-\`\`\`typescript
+```typescript
 interface Exam {
   id: string
   title: string
   sections: Array<ListeningSection | ReadingSection | GrammarSection>
 }
-\`\`\`
+```
 
 ## Creating Custom Exams
 
